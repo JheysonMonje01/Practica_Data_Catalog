@@ -1,0 +1,24 @@
+[ {
+  "baseItem" : {
+    "id" : "_jZWH4IUkEfG309XIrbQG5g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_8fFn0IUlEfG309XIrbQG5g",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_PEyfAIUjEfG309XIrbQG5g",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_PEyfAIUjEfG309XIrbQG5g - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
