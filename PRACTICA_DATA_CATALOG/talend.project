@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_gYWDwYUeEfGPvp70cvOLRA" label="practica_data_catalog" language="java" technicalLabel="PRACTICA_DATA_CATALOG" author="_gYWDwoUeEfGPvp70cvOLRA" productVersion="Qlik Talend Cloud Enterprise Edition-8.0.1.20250218_0945-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/JheysonMonje01/Practica_Data_Catalog.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+    <migrationTask xmi:id="_gZUUIIUeEfGPvp70cvOLRA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_gYWDwoUeEfGPvp70cvOLRA" login="jheysonjavier.m6185@trial.jsqh286pt3x5w6d.us.qlikcloud.com" firstName="Jheyson" lastName="Monje" type="DQ"/>
+  <TalendProperties:User xmi:id="_vzMiAIU7EfGQN_0qv35iPA" login="alpha.digital.solution04@trial.jsqh286pt3x5w6d.us.qlikcloud.com" firstName="Javier" lastName="Guaman" type="DQ"/>
+  <TalendProperties:User xmi:id="_DnfVMIhYEfGQD49YpqjuIw" login="arlethmary2610@trial.jsqh286pt3x5w6d.us.qlikcloud.com" firstName="Arleth" lastName="Cáceres" type="DQ"/>
+</xmi:XMI>
