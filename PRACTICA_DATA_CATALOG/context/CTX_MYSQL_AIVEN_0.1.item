@@ -6,5 +6,5 @@
   <contextParameter xmi:id="_25O6w4nUEfGsx4rYDGpP7Q" comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="crm"/>
   <contextParameter xmi:id="_25O6xInUEfGsx4rYDGpP7Q" comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:r95Bozw3AcJd9k10p23Ioer4exCenyUcwG9evceq7Wc/QpRr5fFGgUzAwe5Bu+zvGt1feg=="/>
   <contextParameter xmi:id="_25O6xYnUEfGsx4rYDGpP7Q" comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2"/>
-  <contextParameter xmi:id="_f-oDYInYEfGsx4rYDGpP7Q" comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_f-oDYInYEfGsx4rYDGpP7Q" comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:HerVoAHcMt/85qiyhhFv8uFxlD0cRk4ZB0OdFIbo2BI="/>
 </talendfile:ContextType>

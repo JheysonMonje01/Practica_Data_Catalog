@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="MYSQL_Server" prompt="MYSQL_Server?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="mysql-31036ed7-anthonychaconfu29-5614.l.aivencloud.com" internalId="_Iu5_AInZEfGsx4rYDGpP7Q"/>
-    <contextParameter comment="" name="MYSQL_Login" prompt="MYSQL_Login?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="avnadmin" internalId="_Iu5_AYnZEfGsx4rYDGpP7Q"/>
-    <contextParameter comment="" name="MYSQL_Port" prompt="MYSQL_Port?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="26515" internalId="_Iu5_AonZEfGsx4rYDGpP7Q"/>
-    <contextParameter comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="crm" internalId="_Iu5_A4nZEfGsx4rYDGpP7Q"/>
-    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_Password" value="enc:system.encryption.key.v1:JLivYCJlG++9LVxaYuD43DN/OPYPrrNv7Y1ZRu2wb1CaLlL+WQZkjsP2Pk0Ux+1wRo3BWQ==" internalId="_Iu6mEInZEfGsx4rYDGpP7Q"/>
-    <contextParameter comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2" internalId="_Iu6mEYnZEfGsx4rYDGpP7Q"/>
-    <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_Password" value="" internalId="_Iu6mEonZEfGsx4rYDGpP7Q"/>
+    <contextParameter comment="" name="MYSQL_Server" prompt="MYSQL_Server?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="mysql-31036ed7-anthonychaconfu29-5614.l.aivencloud.com" internalId="_jjQR0IoGEfGsx4rYDGpP7Q"/>
+    <contextParameter comment="" name="MYSQL_Login" prompt="MYSQL_Login?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="avnadmin" internalId="_jjQR0YoGEfGsx4rYDGpP7Q"/>
+    <contextParameter comment="" name="MYSQL_Port" prompt="MYSQL_Port?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="26515" internalId="_jjQR0ooGEfGsx4rYDGpP7Q"/>
+    <contextParameter comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="crm" internalId="_jjQR04oGEfGsx4rYDGpP7Q"/>
+    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_Password" value="enc:system.encryption.key.v1:/lU/VLI8cSrv62nC4Hj6yazhpVnvkjSD66/m6ZCA5jAH4F4jUf4N3vxWcuVf1pIYnzSYKw==" internalId="_jjQR1IoGEfGsx4rYDGpP7Q"/>
+    <contextParameter comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2" internalId="_jjQR1YoGEfGsx4rYDGpP7Q"/>
+    <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_Password" value="enc:system.encryption.key.v1:yvL3TyQEGJCpwqW9iaYg4PxA3UJaAnuOsnT6o4mwZGY=" internalId="_jjQR1ooGEfGsx4rYDGpP7Q"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
