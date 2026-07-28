@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_4hZycInUEfGVmofsoDaTuQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_4hbAkInUEfGVmofsoDaTuQ" comment="" name="MYSQL_Server" prompt="MYSQL_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-31036ed7-anthonychaconfu29-5614.l.aivencloud.com"/>
+  <contextParameter xmi:id="_4hbAkYnUEfGVmofsoDaTuQ" comment="" name="MYSQL_Login" prompt="MYSQL_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="avnadmin"/>
+  <contextParameter xmi:id="_4hbAkonUEfGVmofsoDaTuQ" comment="" name="MYSQL_Port" prompt="MYSQL_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="26515"/>
+  <contextParameter xmi:id="_4hbAk4nUEfGVmofsoDaTuQ" comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="crm"/>
+  <contextParameter xmi:id="_4hbAlInUEfGVmofsoDaTuQ" comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="true" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_4hbAlYnUEfGVmofsoDaTuQ" comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2"/>
+  <contextParameter xmi:id="_TO0I4InYEfGVmofsoDaTuQ" comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+</talendfile:ContextType>
