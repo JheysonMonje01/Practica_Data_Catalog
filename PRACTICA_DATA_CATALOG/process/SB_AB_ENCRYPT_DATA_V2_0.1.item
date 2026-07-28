@@ -5,9 +5,9 @@
     <contextParameter comment="" name="MYSQL_Login" prompt="MYSQL_Login?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="avnadmin" internalId="_JPGiAYnZEfGVmofsoDaTuQ"/>
     <contextParameter comment="" name="MYSQL_Port" prompt="MYSQL_Port?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="26515" internalId="_JPGiAonZEfGVmofsoDaTuQ"/>
     <contextParameter comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="crm" internalId="_JPGiA4nZEfGVmofsoDaTuQ"/>
-    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="true" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="" internalId="_JPGiBInZEfGVmofsoDaTuQ"/>
+    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="true" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="enc:system.encryption.key.v1:50yxlJgPejjpQqMBCgvrakCab/eew6K35obUpWLKhs5pzsihMsE0lQXNcvgaHizNzRVAgg==" internalId="_JPGiBInZEfGVmofsoDaTuQ"/>
     <contextParameter comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2" internalId="_JPGiBYnZEfGVmofsoDaTuQ"/>
-    <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="" internalId="_JPGiBonZEfGVmofsoDaTuQ"/>
+    <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="enc:system.encryption.key.v1:dLMljU7ZzKvY6DEDSms4lOq2dil8p13YapBVk5/G+F4=" internalId="_JPGiBonZEfGVmofsoDaTuQ"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
