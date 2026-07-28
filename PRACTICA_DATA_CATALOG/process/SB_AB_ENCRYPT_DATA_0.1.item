@@ -5,7 +5,7 @@
     <contextParameter comment="" name="MYSQL_Login" prompt="MYSQL_Login?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="avnadmin" internalId="_QC-T0YosEfGBT8cEGjsIew"/>
     <contextParameter comment="" name="MYSQL_Port" prompt="MYSQL_Port?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="26515" internalId="_QC-T0oosEfGBT8cEGjsIew"/>
     <contextParameter comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="crm" internalId="_QC-T04osEfGBT8cEGjsIew"/>
-    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="enc:system.encryption.key.v1:Q08GK/oJz6iRe7KlyHy4FWArch4RMm9hG3og7YfRS8MSfuma9JYK0wOVt9fUl/aLp3k0gw==" internalId="_QC-T1IosEfGBT8cEGjsIew"/>
+    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="true" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="" internalId="_QC-T1IosEfGBT8cEGjsIew"/>
     <contextParameter comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2" internalId="_QC-T1YosEfGBT8cEGjsIew"/>
     <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="" internalId="_QC-T1oosEfGBT8cEGjsIew"/>
   </context>
