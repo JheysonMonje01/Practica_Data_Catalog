@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_w90TYIlfEfGInqb_3vOpBA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_w90TYYlfEfGInqb_3vOpBA" comment="" name="AdditionalParams" prompt="AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sslmode=require&amp;channel_binding=require"/>
+    <contextParameter xmi:id="_w90TYolfEfGInqb_3vOpBA" comment="" name="Port" prompt="Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_w90TY4lfEfGInqb_3vOpBA" comment="" name="Login" prompt="Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_runtime"/>
+    <contextParameter xmi:id="_w90TZIlfEfGInqb_3vOpBA" comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="raw"/>
+    <contextParameter xmi:id="_w90TZYlfEfGInqb_3vOpBA" comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="neondb"/>
+    <contextParameter xmi:id="_w90TZolfEfGInqb_3vOpBA" comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Tbh3i192m6IN+l27HXr1nd4zXu4VucLWLwAxq1hhfldCtUEW/f0gyerPGM8="/>
+    <contextParameter xmi:id="_w90TZ4lfEfGInqb_3vOpBA" comment="" name="Server" prompt="Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ep-odd-wind-ax3bke0k.c-4.us-east-2.aws.neon.tech"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_EGLEUIlgEfGInqb_3vOpBA" confirmationNeeded="false" hide="false" name="QA">
+    <contextParameter xmi:id="_EGLEUYlgEfGInqb_3vOpBA" comment="" name="AdditionalParams" prompt="AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sslmode=require&amp;channel_binding=require"/>
+    <contextParameter xmi:id="_EGLEUolgEfGInqb_3vOpBA" comment="" name="Port" prompt="Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_EGLEU4lgEfGInqb_3vOpBA" comment="" name="Login" prompt="Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_runtime"/>
+    <contextParameter xmi:id="_EGLEVIlgEfGInqb_3vOpBA" comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="raw"/>
+    <contextParameter xmi:id="_EGLEVYlgEfGInqb_3vOpBA" comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="neondb"/>
+    <contextParameter xmi:id="_EGLEVolgEfGInqb_3vOpBA" comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Tbh3i192m6IN+l27HXr1nd4zXu4VucLWLwAxq1hhfldCtUEW/f0gyerPGM8="/>
+    <contextParameter xmi:id="_EGLEV4lgEfGInqb_3vOpBA" comment="" name="Server" prompt="Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ep-odd-wind-ax3bke0k.c-4.us-east-2.aws.neon.tech"/>
+  </talendfile:ContextType>
+</xmi:XMI>

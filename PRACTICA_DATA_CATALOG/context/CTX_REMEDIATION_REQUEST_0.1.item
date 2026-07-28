@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_MgJZAIn6EfG0gPIzpRH4EA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_MgJZAYn6EfG0gPIzpRH4EA" comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OCAL_MASK_NOT_FOUND_001"/>
+    <contextParameter xmi:id="_jwOs8In9EfG0gPIzpRH4EA" comment="" name="customer_rut" prompt="customer_rut?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="90000001-1"/>
+    <contextParameter xmi:id="_Jmi4MIoGEfG0gPIzpRH4EA" comment="" name="executed_by" prompt="executed_by?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Jheyson"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_MgJZAon6EfG0gPIzpRH4EA" confirmationNeeded="false" hide="false" name="QA">
+    <contextParameter xmi:id="_MgJZA4n6EfG0gPIzpRH4EA" comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LOCAL_MASK_002"/>
+    <contextParameter xmi:id="_jwOs8Yn9EfG0gPIzpRH4EA" comment="" name="customer_rut" prompt="customer_rut?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Jmi4MYoGEfG0gPIzpRH4EA" comment="" name="executed_by" prompt="executed_by?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
