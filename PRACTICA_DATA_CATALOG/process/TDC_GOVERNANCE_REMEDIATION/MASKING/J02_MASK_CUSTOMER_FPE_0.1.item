@@ -4,14 +4,14 @@
     <contextParameter comment="" name="fpe_password" prompt="fpe_password?" promptNeeded="true" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_Password" value="" internalId="_mNsCIIniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_String" value="FF1_AES_V1" internalId="_mNsCIYniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="executed_by" prompt="executed_by?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="" internalId="_TVfpwIoGEfG0gPIzpRH4EA"/>
-    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="LOCAL_MASK_002" internalId="_TVfpwYoGEfG0gPIzpRH4EA"/>
+    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="LOCAL_MASK_003" internalId="_TVfpwYoGEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="customer_rut" prompt="customer_rut?" promptNeeded="true" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="" internalId="_TVfpwooGEfG0gPIzpRH4EA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="fpe_password" prompt="fpe_password?" promptNeeded="true" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_Password" value="" internalId="_mNspMIniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_String" value="FF1_AES_V1" internalId="_mNspMYniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="executed_by" prompt="executed_by?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="Jheyson" internalId="_TVfpw4oGEfG0gPIzpRH4EA"/>
-    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="OCAL_MASK_NOT_FOUND_001" internalId="_TVfpxIoGEfG0gPIzpRH4EA"/>
+    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="LOCAL_MASK_003" internalId="_TVfpxIoGEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="customer_rut" prompt="customer_rut?" promptNeeded="true" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="90000001-1" internalId="_TVfpxYoGEfG0gPIzpRH4EA"/>
   </context>
   <parameters>
@@ -114,16 +114,6 @@
   </parameters>
   <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlInput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlInput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_RllMkIlcEfGInqb_3vOpBA" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -504,7 +494,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out_customer_masked">
         <mapperTableEntries name="idcustomer" expression="row2.idcustomer " type="id_Long" nullable="true"/>
@@ -536,15 +526,6 @@
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gobgQInWEfG0gPIzpRH4EA" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -778,15 +759,6 @@
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="-80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_99x0MInXEfG0gPIzpRH4EA" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
