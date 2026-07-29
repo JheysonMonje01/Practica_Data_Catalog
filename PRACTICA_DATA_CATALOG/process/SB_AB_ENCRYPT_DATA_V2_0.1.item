@@ -327,6 +327,7 @@
     <elementParameter field="CHECK" name="KEEP_NULL" value="true"/>
     <elementParameter field="CHECK" name="KEEP_EMPTY" value="false"/>
     <elementParameter field="CHECK" name="SEPERATE_OUTPUT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tDataMasking_MaskedCustomer"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="customer" name="tDataMasking_1">
       <column comment="" key="true" length="10" name="idcustomer" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
