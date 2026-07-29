@@ -5,9 +5,9 @@
     <contextParameter comment="" name="MYSQL_Login" prompt="MYSQL_Login?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="avnadmin" internalId="_QC-T0YosEfGBT8cEGjsIew"/>
     <contextParameter comment="" name="MYSQL_Port" prompt="MYSQL_Port?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="26515" internalId="_QC-T0oosEfGBT8cEGjsIew"/>
     <contextParameter comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="crm" internalId="_QC-T04osEfGBT8cEGjsIew"/>
-    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="enc:system.encryption.key.v1:IkwDrD/obXMMKDtpMRpTJS6ci30U/L6tCIbMJBR810nUjWnfszx0aJ1xJB5PT+cECGBEdA==" internalId="_QC-T1IosEfGBT8cEGjsIew"/>
+    <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="AVNS_Lnd7BHCLUX4ru1gU9lV" internalId="_QC-T1IosEfGBT8cEGjsIew"/>
     <contextParameter comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2" internalId="_QC-T1YosEfGBT8cEGjsIew"/>
-    <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_Password" value="enc:system.encryption.key.v1:yewfnwutYqXfRgUD8UfHs/mSoWvbUexDtUMWyTq+SnY=" internalId="_QC-T1oosEfGBT8cEGjsIew"/>
+    <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_4g-7sInUEfGVmofsoDaTuQ" type="id_String" value="1234" internalId="_QC-T1oosEfGBT8cEGjsIew"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
