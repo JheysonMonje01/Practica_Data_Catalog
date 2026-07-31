@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="api_endpoint" prompt="api_endpoint?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/services/remediation" internalId="_MAHvoItvEfGzjdQUgCo9jQ"/>
+    <contextParameter comment="" name="api_endpoint" prompt="api_endpoint?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/remediation" internalId="_MAHvoItvEfGzjdQUgCo9jQ"/>
     <contextParameter comment="" name="talend_cloud_base_url" prompt="talend_cloud_base_url?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="https://api.us.cloud.talend.com" internalId="_MAHvoYtvEfGzjdQUgCo9jQ"/>
     <contextParameter comment="" name="talend_cloud_task_id_mask" prompt="talend_cloud_task_id_mask?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="6a680cc24dc1db6e5ba0326b" internalId="_MAHvootvEfGzjdQUgCo9jQ"/>
     <contextParameter comment="" name="talend_service_account_id" prompt="talend_service_account_id?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="O2rIFvprIme86NWboMS7orM2tHYfZUrApjdHG9iNJyo" internalId="_MAHvo4tvEfGzjdQUgCo9jQ"/>
@@ -24,7 +24,7 @@
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="360" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="320" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -137,6 +137,12 @@
       <elementValue elementRef="CONSUMES" value="NONE" id="9"/>
       <elementValue elementRef="PRODUCES" value="JSON" id="10"/>
       <elementValue elementRef="STREAMING" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA" value="uiRequest" id="12"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" id="13"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/ui&quot;" id="14"/>
+      <elementValue elementRef="CONSUMES" value="NONE" id="15"/>
+      <elementValue elementRef="PRODUCES" value="HTML" id="16"/>
+      <elementValue elementRef="STREAMING" value="false" id="17"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
@@ -174,6 +180,7 @@
     <metadata connector="FLOW" label="statusRequest" name="statusRequest">
       <column comment="path" key="false" length="-1" name="executionId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+    <metadata connector="FLOW" label="uiRequest" name="uiRequest"/>
   </node>
   <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
@@ -954,7 +961,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="responseInvalid">
         <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;found\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;executionId\&quot;:\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ (invalidStatusRequest.execution_id == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    ? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    : invalidStatusRequest.execution_id)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;INVALID_REQUEST\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;INVALID_EXECUTION_ID\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;&quot; + invalidStatusRequest.message + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;requestedAt\&quot;:\&quot;&quot; + invalidStatusRequest.requested_at + &quot;\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
@@ -1104,7 +1111,7 @@
       <column comment="" key="false" length="-1" name="requested_at" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="statusTokenOk" expressionFilter="statusTokenResult.access_token != null&#xD;&#xA;&amp;&amp; !statusTokenResult.access_token.trim().isEmpty()" activateExpressionFilter="true">
         <mapperTableEntries name="requested_execution_id" expression="statusTokenResult.requested_execution_id " type="id_String" nullable="true"/>
@@ -1144,7 +1151,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="statusTokenfail">
         <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;found\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;executionId\&quot;:\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ (statusTokenFailed.requested_execution_id == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    ? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    : statusTokenFailed.requested_execution_id)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;ERROR\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;TALEND_CLOUD_AUTH_ERROR\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;&quot; + statusTokenFailed.message + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;requestedAt\&quot;:\&quot;&quot; + statusTokenFailed.requested_at + &quot;\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
@@ -1311,7 +1318,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="requestedExecutionIdNormalized" expression="row1.requested_execution_id == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: row1.requested_execution_id.trim() " type="id_String"/>
         <mapperTableEntries name="cloudExecutionIdNormalized" expression="row1.cloud_execution_id == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: row1.cloud_execution_id.trim() " type="id_String"/>
@@ -1364,6 +1371,52 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-80" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_13" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_13-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_BuildUiPage"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="uiPage">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="uiPage">
+        <mapperTableEntries name="body" expression="&quot;&lt;!DOCTYPE html>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;html lang='es'>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;head>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;meta charset='UTF-8'>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;title>Remediación de datos&lt;/title>&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;style>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;*{box-sizing:border-box;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;body{margin:0;padding:20px;font-family:Arial,sans-serif;background:#f4f6f8;color:#172033;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.card{max-width:520px;margin:0 auto;background:#ffffff;border-radius:12px;padding:24px;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;box-shadow:0 4px 18px rgba(0,0,0,.12);}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;h2{margin:0 0 8px;color:#14213d;font-size:22px;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.description{margin:0 0 22px;color:#5b6475;font-size:14px;line-height:1.5;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;label{display:block;margin-bottom:7px;font-weight:bold;font-size:14px;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;input{width:100%;padding:12px;border:1px solid #c8ced8;border-radius:7px;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;font-size:16px;text-transform:uppercase;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;input:focus{outline:none;border-color:#16883f;box-shadow:0 0 0 3px rgba(22,136,63,.12);}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;button{width:100%;margin-top:16px;padding:12px;border:0;border-radius:7px;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;background:#16883f;color:white;font-size:15px;font-weight:bold;cursor:pointer;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;button:hover{background:#116d33;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;button:disabled{background:#9aa3ad;cursor:not-allowed;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.status{display:none;margin-top:20px;padding:13px;border-radius:7px;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;font-size:14px;line-height:1.5;white-space:pre-wrap;word-break:break-word;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.status.info{display:block;background:#eaf3ff;color:#174a7e;border:1px solid #bdd8f4;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.status.success{display:block;background:#e8f7ed;color:#176934;border:1px solid #afd8bc;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.status.error{display:block;background:#fdecec;color:#8a2020;border:1px solid #edb7b7;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.status.warning{display:block;background:#fff6df;color:#775616;border:1px solid #eed48d;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;.details{display:none;margin-top:12px;padding:12px;background:#f7f8fa;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;border:1px solid #dfe3e8;border-radius:7px;font-size:12px;white-space:pre-wrap;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;word-break:break-word;max-height:230px;overflow:auto;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;/style>&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;/head>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;body>&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;div class='card'>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;h2>Solicitud de enmascaramiento&lt;/h2>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;p class='description'>Ingrese el RUT del cliente. La solicitud será enviada al &quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;orquestador y se consultará automáticamente el estado de ejecución.&lt;/p>&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;form id='maskForm'>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;label for='rut'>RUT del cliente&lt;/label>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;input id='rut' name='rut' type='text' maxlength='12' &quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;placeholder='90000001-1' autocomplete='off' required>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;button id='submitButton' type='submit'>Enmascarar datos&lt;/button>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;/form>&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;div id='statusBox' class='status'>&lt;/div>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;pre id='detailsBox' class='details'>&lt;/pre>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;/div>&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;script>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const form=document.getElementById('maskForm');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const rutInput=document.getElementById('rut');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const button=document.getElementById('submitButton');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const statusBox=document.getElementById('statusBox');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const detailsBox=document.getElementById('detailsBox');&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;function showStatus(message,type,data){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;statusBox.className='status '+type;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;statusBox.textContent=message;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;if(data){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;detailsBox.style.display='block';&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;detailsBox.textContent=JSON.stringify(data,null,2);&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}else{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;detailsBox.style.display='none';&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;detailsBox.textContent='';&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;function sleep(milliseconds){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;return new Promise(function(resolve){setTimeout(resolve,milliseconds);});&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;async function consultStatus(executionId){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;for(let attempt=1;attempt&lt;=120;attempt++){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const response=await fetch('./status/'+encodeURIComponent(executionId),{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;method:'GET',&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;headers:{'Accept':'application/json'},&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;cache:'no-store'&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;});&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;let data;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;try{data=await response.json();}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;catch(error){throw new Error('La respuesta de estado no contiene JSON válido');}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const status=data.status||'UNKNOWN';&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;if(status==='SUCCESS'){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;showStatus('Proceso finalizado correctamente.','success',data);&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;return data;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;if(status==='FAILED'||status==='TERMINATED'||status==='NOT_FOUND'){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;showStatus(data.message||'La ejecución no finalizó correctamente.','error',data);&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;return data;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;showStatus('Ejecución en curso: '+status+'\\nConsulta '+attempt+' de 120.',&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;'info',data);&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;await sleep(2000);&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;throw new Error('Se agotó el tiempo de consulta. Puede verificar nuevamente el estado.');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;form.addEventListener('submit',async function(event){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;event.preventDefault();&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const rut=rutInput.value.trim().toUpperCase();&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;if(rut.length===0){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;showStatus('Debe ingresar un RUT.','error');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;return;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;button.disabled=true;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;button.textContent='Enviando solicitud...';&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;showStatus('Enviando solicitud al orquestador...','info');&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;try{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;const response=await fetch('./mask',{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;method:'POST',&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;headers:{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;'Content-Type':'application/json',&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;'Accept':'application/json'&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;},&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;body:JSON.stringify({&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;rut:rut,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;action:'MASK',&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;requestedBy:'TDC_UI',&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;sourceObject:'raw.customer'&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;})&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;});&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;let data;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;try{data=await response.json();}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;catch(error){throw new Error('La respuesta de envío no contiene JSON válido');}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;if(!response.ok||data.accepted!==true){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;throw new Error(data.message||'La solicitud fue rechazada por el orquestador');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;if(!data.executionId){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;throw new Error('Talend Cloud no devolvió un executionId');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;showStatus(&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;'Solicitud aceptada.\\nExecution ID: '+data.executionId+'\\nConsultando estado...',&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;'info',data);&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;await consultStatus(data.executionId);&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}catch(error){&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;showStatus(error.message||'Ocurrió un error inesperado.','error');&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}finally{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;button.disabled=false;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;button.textContent='Enmascarar datos';&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;});&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;/script>&quot;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;/body>&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;&lt;/html>&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="uiRequest" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-280" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_9" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;text/html; charset=UTF-8&quot;" id="1"/>
+      <elementValue elementRef="NAME" value="&quot;Cache-Control&quot;" id="2"/>
+      <elementValue elementRef="VALUE" value="&quot;no-store&quot;" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="tRESTResponse_UiPage"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_9">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="remediationRequest" lineStyle="0" metaname="remediationRequest" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTRequest_1" target="tExtractJSONFields_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
@@ -1393,6 +1446,10 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="statusRequest" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="uiRequest" lineStyle="0" metaname="uiRequest" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tRESTRequest_1" target="tMap_13">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="uiRequest" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="parsedRequest" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tExtractJSONFields_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1530,6 +1587,10 @@
   <connection connectorName="FLOW" label="statusResult" lineStyle="0" metaname="statusResult" offsetLabelX="0" offsetLabelY="0" source="tMap_14" target="tRESTResponse_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="statusResult" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="uiPage" lineStyle="0" metaname="uiPage" offsetLabelX="0" offsetLabelY="0" source="tMap_13" target="tRESTResponse_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="uiPage" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>

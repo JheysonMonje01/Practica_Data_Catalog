@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="__6wKcIrYEfGr0fsk5oZxHg" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="__6wKcYrYEfGr0fsk5oZxHg" comment="" name="api_endpoint" prompt="api_endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/services/remediation"/>
+  <contextParameter xmi:id="__6wKcYrYEfGr0fsk5oZxHg" comment="" name="api_endpoint" prompt="api_endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/remediation"/>
   <contextParameter xmi:id="__6wKcorYEfGr0fsk5oZxHg" comment="" name="talend_cloud_base_url" prompt="talend_cloud_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://api.us.cloud.talend.com"/>
   <contextParameter xmi:id="__6wKc4rYEfGr0fsk5oZxHg" comment="" name="talend_cloud_task_id_mask" prompt="talend_cloud_task_id_mask?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="6a680cc24dc1db6e5ba0326b"/>
   <contextParameter xmi:id="__6wKdIrYEfGr0fsk5oZxHg" comment="" name="talend_service_account_id" prompt="talend_service_account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="O2rIFvprIme86NWboMS7orM2tHYfZUrApjdHG9iNJyo"/>
