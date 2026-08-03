@@ -8,7 +8,7 @@
     <contextParameter comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_Password" value="enc:system.encryption.key.v1:joLJoTXRYZl3zq0mgLBZh1cNoMc4R6wdDdvz/+AS4fMMhOxWVfc5qMeCZJusBj4xiC6GGg==" internalId="_J-0ZlIqbEfG0TZ_BpSVOHw"/>
     <contextParameter comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2" internalId="_J-0ZlYqbEfG0TZ_BpSVOHw"/>
     <contextParameter comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="_241SIInUEfGsx4rYDGpP7Q" type="id_Password" value="enc:system.encryption.key.v1:3PI+3SqeynHrAh+/PD2M5okbCU9ilurdN2mpUYjfASE=" internalId="_J-0ZloqbEfG0TZ_BpSVOHw"/>
-    <contextParameter comment="Hola" name="rut_solicitud" prompt="rut_solicitud?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="" internalId="_Rbx6YIqbEfG0TZ_BpSVOHw"/>
+    <contextParameter comment="Ingresar el rut" name="rut_solicitud" prompt="rut_solicitud?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="" internalId="_Rbx6YIqbEfG0TZ_BpSVOHw"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -187,7 +187,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO crm.audit_eliminacion (rut_solicitado, fecha_hora, solicitante) VALUES (?, NOW(), ?)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO crm.audit_eliminacion (rut_solicitado, fecha_hora, solicitante) VALUES (?, NOW(), 'anthony.chacon')&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -199,10 +199,7 @@
     <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
       <elementValue elementRef="PARAMETER_INDEX" value="1" id="0"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="1"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row1.rut" id="2"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="2" id="3"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="4"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row1.solicitante" id="5"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.rut_solicitud" id="2"/>
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
