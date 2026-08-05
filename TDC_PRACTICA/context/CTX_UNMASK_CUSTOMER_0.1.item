@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_JCqv0I98EfGlS8KRZii3sQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_JCqv0Y98EfGlS8KRZii3sQ" comment="" name="masked_customer_rut" prompt="masked_customer_rut?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="04292207-3"/>
+  <contextParameter xmi:id="_JCqv0o98EfGlS8KRZii3sQ" comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_JCqv0498EfGlS8KRZii3sQ" comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="FF1_AES_V1"/>
+  <contextParameter xmi:id="_JCqv1I98EfGlS8KRZii3sQ" comment="" name="environment_name" prompt="environment_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QA"/>
+  <contextParameter xmi:id="_JCqv1Y98EfGlS8KRZii3sQ" comment="" name="fpe_password" prompt="fpe_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:07ybIgbqtP67t8YYlYJ40EpjCE9nft1JCcE28603WEHp25NEoQ=="/>
+  <contextParameter xmi:id="_JCqv1o98EfGlS8KRZii3sQ" comment="" name="requested_by" prompt="requested_by?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="JHEYSON_LOCAL"/>
+  <contextParameter xmi:id="_JCqv1498EfGlS8KRZii3sQ" comment="" name="unmask_reason" prompt="unmask_reason?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="VALIDACION_AUTORIZADA"/>
+  <contextParameter xmi:id="_JCqv2I98EfGlS8KRZii3sQ" comment="" name="retention_minutes" prompt="retention_minutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="30"/>
+</talendfile:ContextType>

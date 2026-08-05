@@ -1,0 +1,68 @@
+{
+  "itemId" : "_zu8xYIrXEfGr0fsk5oZxHg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "__6Wh0IrYEfGr0fsk5oZxHg",
+    "parameterList" : [ {
+      "id" : "__6wKcYrYEfGr0fsk5oZxHg",
+      "name" : "api_endpoint"
+    }, {
+      "id" : "__6wKcorYEfGr0fsk5oZxHg",
+      "name" : "talend_cloud_base_url"
+    }, {
+      "id" : "__6wKc4rYEfGr0fsk5oZxHg",
+      "name" : "talend_cloud_task_id_mask"
+    }, {
+      "id" : "__6wKdIrYEfGr0fsk5oZxHg",
+      "name" : "talend_service_account_id"
+    }, {
+      "id" : "__6wKdYrYEfGr0fsk5oZxHg",
+      "name" : "talend_service_account_secret"
+    }, {
+      "id" : "__6wKdorYEfGr0fsk5oZxHg",
+      "name" : "tdc_base_url"
+    }, {
+      "id" : "__6wKd4rYEfGr0fsk5oZxHg",
+      "name" : "tdc_api_username"
+    }, {
+      "id" : "__6wKeIrYEfGr0fsk5oZxHg",
+      "name" : "tdc_api_password"
+    }, {
+      "id" : "__6wKeYrYEfGr0fsk5oZxHg",
+      "name" : "poll_interval_seconds"
+    }, {
+      "id" : "__6wKeorYEfGr0fsk5oZxHg",
+      "name" : "poll_max_attempts"
+    }, {
+      "id" : "__6wKe4rYEfGr0fsk5oZxHg",
+      "name" : "masking_policy_version"
+    }, {
+      "id" : "__6wKfIrYEfGr0fsk5oZxHg",
+      "name" : "environment_name"
+    }, {
+      "id" : "_mvhOEIr5EfGzjdQUgCo9jQ",
+      "name" : "talend_cloud_token_path"
+    }, {
+      "id" : "_mvhOEYr5EfGzjdQUgCo9jQ",
+      "name" : "talend_cloud_execution_path"
+    }, {
+      "id" : "_mvhOEor5EfGzjdQUgCo9jQ",
+      "name" : "talend_cloud_execution_status_path"
+    }, {
+      "id" : "_mvhOE4r5EfGzjdQUgCo9jQ",
+      "name" : "tdc_create_request_path"
+    }, {
+      "id" : "_mvhOFIr5EfGzjdQUgCo9jQ",
+      "name" : "tdc_update_request_path"
+    }, {
+      "id" : "_mvhOFYr5EfGzjdQUgCo9jQ",
+      "name" : "http_connection_timeout_ms"
+    }, {
+      "id" : "_mvhOFor5EfGzjdQUgCo9jQ",
+      "name" : "http_receive_timeout_ms"
+    }, {
+      "id" : "_mvhOF4r5EfGzjdQUgCo9jQ",
+      "name" : "allowed_source_object"
+    } ]
+  } ]
+}

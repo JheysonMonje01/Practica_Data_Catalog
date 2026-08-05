@@ -1,0 +1,32 @@
+{
+  "itemId" : "_wHMmMI96EfGlS8KRZii3sQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_JCbfQI98EfGlS8KRZii3sQ",
+    "parameterList" : [ {
+      "id" : "_JCqv0Y98EfGlS8KRZii3sQ",
+      "name" : "masked_customer_rut"
+    }, {
+      "id" : "_JCqv0o98EfGlS8KRZii3sQ",
+      "name" : "request_id"
+    }, {
+      "id" : "_JCqv0498EfGlS8KRZii3sQ",
+      "name" : "masking_policy_version"
+    }, {
+      "id" : "_JCqv1I98EfGlS8KRZii3sQ",
+      "name" : "environment_name"
+    }, {
+      "id" : "_JCqv1Y98EfGlS8KRZii3sQ",
+      "name" : "fpe_password"
+    }, {
+      "id" : "_JCqv1o98EfGlS8KRZii3sQ",
+      "name" : "requested_by"
+    }, {
+      "id" : "_JCqv1498EfGlS8KRZii3sQ",
+      "name" : "unmask_reason"
+    }, {
+      "id" : "_JCqv2I98EfGlS8KRZii3sQ",
+      "name" : "retention_minutes"
+    } ]
+  } ]
+}
