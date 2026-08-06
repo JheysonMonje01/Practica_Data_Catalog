@@ -19,15 +19,6 @@
       "id" : "__6wKdYrYEfGr0fsk5oZxHg",
       "name" : "talend_service_account_secret"
     }, {
-      "id" : "__6wKdorYEfGr0fsk5oZxHg",
-      "name" : "tdc_base_url"
-    }, {
-      "id" : "__6wKd4rYEfGr0fsk5oZxHg",
-      "name" : "tdc_api_username"
-    }, {
-      "id" : "__6wKeIrYEfGr0fsk5oZxHg",
-      "name" : "tdc_api_password"
-    }, {
       "id" : "__6wKeYrYEfGr0fsk5oZxHg",
       "name" : "poll_interval_seconds"
     }, {
@@ -49,20 +40,23 @@
       "id" : "_mvhOEor5EfGzjdQUgCo9jQ",
       "name" : "talend_cloud_execution_status_path"
     }, {
-      "id" : "_mvhOE4r5EfGzjdQUgCo9jQ",
-      "name" : "tdc_create_request_path"
-    }, {
-      "id" : "_mvhOFIr5EfGzjdQUgCo9jQ",
-      "name" : "tdc_update_request_path"
-    }, {
       "id" : "_mvhOFYr5EfGzjdQUgCo9jQ",
       "name" : "http_connection_timeout_ms"
     }, {
       "id" : "_mvhOFor5EfGzjdQUgCo9jQ",
       "name" : "http_receive_timeout_ms"
     }, {
-      "id" : "_mvhOF4r5EfGzjdQUgCo9jQ",
-      "name" : "allowed_source_object"
+      "id" : "_Rhe4cJDrEfGnq_dA74XZCA",
+      "name" : "talend_cloud_task_id_unmask"
+    }, {
+      "id" : "_jQw9oJDrEfGnq_dA74XZCA",
+      "name" : "allowed_source_object_mask"
+    }, {
+      "id" : "_jQw9oZDrEfGnq_dA74XZCA",
+      "name" : "allowed_source_object_unmask"
+    }, {
+      "id" : "_qLykIJDtEfGnq_dA74XZCA",
+      "name" : "unmask_retention_minutes"
     } ]
   } ]
 }

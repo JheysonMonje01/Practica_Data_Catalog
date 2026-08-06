@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="masked_customer_rut" prompt="masked_customer_rut?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="04292207-3" internalId="_4rWwAJB0EfGDx8GFeGaX8Q"/>
+    <contextParameter comment="" name="masked_customer_rut" prompt="masked_customer_rut?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="" internalId="_4rWwAJB0EfGDx8GFeGaX8Q"/>
     <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="" internalId="_4rWwAZB0EfGDx8GFeGaX8Q"/>
     <contextParameter comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="FF1_AES_V1" internalId="_4rWwApB0EfGDx8GFeGaX8Q"/>
     <contextParameter comment="" name="environment_name" prompt="environment_name?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="QA" internalId="_4rWwA5B0EfGDx8GFeGaX8Q"/>
     <contextParameter comment="" name="fpe_password" prompt="fpe_password?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_Password" value="enc:system.encryption.key.v1:P1RYszzh2qzQkRARHdq76cFv6gOMqVE+F4OnszUIxdBXFbLqxw==" internalId="_4rWwBJB0EfGDx8GFeGaX8Q"/>
-    <contextParameter comment="" name="requested_by" prompt="requested_by?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="JHEYSON_LOCAL" internalId="_4rWwBZB0EfGDx8GFeGaX8Q"/>
-    <contextParameter comment="" name="unmask_reason" prompt="unmask_reason?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="VALIDACION_AUTORIZADA" internalId="_4rWwBpB0EfGDx8GFeGaX8Q"/>
+    <contextParameter comment="" name="requested_by" prompt="requested_by?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="" internalId="_4rWwBZB0EfGDx8GFeGaX8Q"/>
+    <contextParameter comment="" name="unmask_reason" prompt="unmask_reason?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_String" value="" internalId="_4rWwBpB0EfGDx8GFeGaX8Q"/>
     <contextParameter comment="" name="retention_minutes" prompt="retention_minutes?" promptNeeded="false" repositoryContextId="_JCbfQI98EfGlS8KRZii3sQ" type="id_Integer" value="30" internalId="_4rWwB5B0EfGDx8GFeGaX8Q"/>
   </context>
   <parameters>

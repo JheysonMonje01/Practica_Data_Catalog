@@ -4,19 +4,19 @@
     <contextParameter comment="" name="fpe_password" prompt="fpe_password?" promptNeeded="true" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_Password" value="" internalId="_mNsCIIniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_String" value="FF1_AES_V1" internalId="_mNsCIYniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="executed_by" prompt="executed_by?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="" internalId="_TVfpwIoGEfG0gPIzpRH4EA"/>
-    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="LOCAL_MASK_003" internalId="_TVfpwYoGEfG0gPIzpRH4EA"/>
+    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="" internalId="_TVfpwYoGEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="customer_rut" prompt="customer_rut?" promptNeeded="true" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="" internalId="_TVfpwooGEfG0gPIzpRH4EA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="fpe_password" prompt="fpe_password?" promptNeeded="true" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_Password" value="" internalId="_mNspMIniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="_lhEGUInaEfG0gPIzpRH4EA" type="id_String" value="FF1_AES_V1" internalId="_mNspMYniEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="executed_by" prompt="executed_by?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="Jheyson" internalId="_TVfpw4oGEfG0gPIzpRH4EA"/>
-    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="LOCAL_MASK_003" internalId="_TVfpxIoGEfG0gPIzpRH4EA"/>
+    <contextParameter comment="" name="request_id" prompt="request_id?" promptNeeded="false" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="" internalId="_TVfpxIoGEfG0gPIzpRH4EA"/>
     <contextParameter comment="" name="customer_rut" prompt="customer_rut?" promptNeeded="true" repositoryContextId="_MfyMoIn6EfG0gPIzpRH4EA" type="id_String" value="90000001-1" internalId="_TVfpxYoGEfG0gPIzpRH4EA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="40" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -57,7 +57,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:aDmu34CJHi2P5AAmveuS3IT44oMwJXHyIBfmdjtH" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:5ugAOeaJpy63ysdlwb4+q4sgBAbrnRuuN33jHlYm" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -92,7 +92,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o4dVf4ufaH8mWIRV6qbDeq6lrhIH/d3WlcVQ52fF" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mnLRMuFgS8c/LL4WlhMq4R0NTOB8XcL/g3kcEQxR" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -950,6 +950,14 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="-80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String incomingRequestId =&#xD;&#xA;context.request_id == null&#xD;&#xA;    ? &quot;&quot;&#xD;&#xA;    : context.request_id.trim();&#xD;&#xA;&#xD;&#xA;if (incomingRequestId.isEmpty()) {&#xD;&#xA;&#xD;&#xA;context.request_id =&#xD;&#xA;    &quot;MASK-&quot; + java.util.UUID.randomUUID().toString();&#xD;&#xA;&#xD;&#xA;} else {&#xD;&#xA;&#xD;&#xA;// Conserva el request_id recibido desde J10.&#xD;&#xA;context.request_id = incomingRequestId;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;System.out.println(&#xD;&#xA;&quot;Request ID de la operación MASK: &quot; + context.request_id&#xD;&#xA;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="tJava_GENERATE_REQUEST_ID_MASK"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDataMasking_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
@@ -974,6 +982,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
@@ -981,6 +992,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>

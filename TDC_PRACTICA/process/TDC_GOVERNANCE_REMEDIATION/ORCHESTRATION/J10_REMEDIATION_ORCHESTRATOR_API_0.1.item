@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="api_endpoint" prompt="api_endpoint?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/remediation" internalId="_MAHvoItvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="talend_cloud_base_url" prompt="talend_cloud_base_url?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="https://api.us.cloud.talend.com" internalId="_MAHvoYtvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="talend_cloud_task_id_mask" prompt="talend_cloud_task_id_mask?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="6a680cc24dc1db6e5ba0326b" internalId="_MAHvootvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="talend_service_account_id" prompt="talend_service_account_id?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="O2rIFvprIme86NWboMS7orM2tHYfZUrApjdHG9iNJyo" internalId="_MAHvo4tvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="talend_service_account_secret" prompt="talend_service_account_secret?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Password" value="enc:system.encryption.key.v1:cJpx8QBzi87dXK1QacrbNqrRCNXJ4ZA4u8EZRXyD+0+thbHJu77FEE8ix6MXO4Q6bFjv1ELixgpy81Kdu4PmoLCG4IpPsoy21whpYaNXfbY1IsKQmPKRCKpvFm0=" internalId="_MAHvpItvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="tdc_base_url" prompt="tdc_base_url?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="https://209.50.245.139/MM" internalId="_MAHvpYtvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="tdc_api_username" prompt="tdc_api_username?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="" internalId="_MAHvpotvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="tdc_api_password" prompt="tdc_api_password?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Password" value="" internalId="_MAHvp4tvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="poll_interval_seconds" prompt="poll_interval_seconds?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="3" internalId="_MAHvqItvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="poll_max_attempts" prompt="poll_max_attempts?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="40" internalId="_MAHvqYtvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="FF1_AES_V1" internalId="_MAHvqotvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="environment_name" prompt="environment_name?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="QA" internalId="_MAHvq4tvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="talend_cloud_token_path" prompt="talend_cloud_token_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/security/oauth/token" internalId="_MAHvrItvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="talend_cloud_execution_path" prompt="talend_cloud_execution_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/processing/executions" internalId="_MAHvrYtvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="talend_cloud_execution_status_path" prompt="talend_cloud_execution_status_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/processing/executions/{executionId}" internalId="_MAHvrotvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="tdc_create_request_path" prompt="tdc_create_request_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="" internalId="_MAHvr4tvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="tdc_update_request_path" prompt="tdc_update_request_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="" internalId="_MAHvsItvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="http_connection_timeout_ms" prompt="http_connection_timeout_ms?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="15000" internalId="_MAHvsYtvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="http_receive_timeout_ms" prompt="http_receive_timeout_ms?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="30000" internalId="_MAHvsotvEfGzjdQUgCo9jQ"/>
-    <contextParameter comment="" name="allowed_source_object" prompt="allowed_source_object?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="raw.customer" internalId="_MAHvs4tvEfGzjdQUgCo9jQ"/>
+    <contextParameter comment="" name="api_endpoint" prompt="api_endpoint?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/remediation" internalId="_B4rA0JFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_cloud_base_url" prompt="talend_cloud_base_url?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="https://api.us.cloud.talend.com" internalId="_B4rA0ZFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_cloud_task_id_mask" prompt="talend_cloud_task_id_mask?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="6a72b289bef37fb1737e8a1c" internalId="_B4rA0pFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_service_account_id" prompt="talend_service_account_id?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="4YVCWuazeeaswgm4fGlWe_OBmtHZLUO0IMdsTqcOq6c" internalId="_B4rA05FJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_service_account_secret" prompt="talend_service_account_secret?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Password" value="enc:system.encryption.key.v1:1mj+i8s45xpT+FObqaGItGLhdBF1zpOuOuusvUA9LLOc14GjCX6VGjyyNFQzF3zWCYf3l3jFDq5UiWxMYiwQSq7AnqJISJuT4x5SAbifchZhdWCdjl2JHUUq1RE=" internalId="_B4rn4JFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="poll_interval_seconds" prompt="poll_interval_seconds?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="3" internalId="_B4rn4ZFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="poll_max_attempts" prompt="poll_max_attempts?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="40" internalId="_B4rn4pFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="masking_policy_version" prompt="masking_policy_version?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="FF1_AES_V1" internalId="_B4rn45FJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="environment_name" prompt="environment_name?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="QA" internalId="_B4rn5JFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_cloud_token_path" prompt="talend_cloud_token_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/security/oauth/token" internalId="_B4rn5ZFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_cloud_execution_path" prompt="talend_cloud_execution_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/processing/executions" internalId="_B4rn5pFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_cloud_execution_status_path" prompt="talend_cloud_execution_status_path?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="/processing/executions/{executionId}" internalId="_B4rn55FJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="http_connection_timeout_ms" prompt="http_connection_timeout_ms?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="15000" internalId="_B4rn6JFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="http_receive_timeout_ms" prompt="http_receive_timeout_ms?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="30000" internalId="_B4rn6ZFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="talend_cloud_task_id_unmask" prompt="talend_cloud_task_id_unmask?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="6a72af703e2dd1dac3600483" internalId="_B4rn6pFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="allowed_source_object_mask" prompt="allowed_source_object_mask?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="raw.customer" internalId="_B4rn65FJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="allowed_source_object_unmask" prompt="allowed_source_object_unmask?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_String" value="secure.customer_masked" internalId="_B4rn7JFJEfGnq_dA74XZCA"/>
+    <contextParameter comment="" name="unmask_retention_minutes" prompt="unmask_retention_minutes?" promptNeeded="false" repositoryContextId="__6Wh0IrYEfGr0fsk5oZxHg" type="id_Integer" value="30" internalId="_B4rn7ZFJEfGnq_dA74XZCA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -65,7 +63,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:aDmu34CJHi2P5AAmveuS3IT44oMwJXHyIBfmdjtH" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:5ugAOeaJpy63ysdlwb4+q4sgBAbrnRuuN33jHlYm" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -100,7 +98,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o4dVf4ufaH8mWIRV6qbDeq6lrhIH/d3WlcVQ52fF" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mnLRMuFgS8c/LL4WlhMq4R0NTOB8XcL/g3kcEQxR" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -143,6 +141,12 @@
       <elementValue elementRef="CONSUMES" value="NONE" id="15"/>
       <elementValue elementRef="PRODUCES" value="HTML" id="16"/>
       <elementValue elementRef="STREAMING" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA" value="unmaskRequest" id="18"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" id="19"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/unmask&quot;" id="20"/>
+      <elementValue elementRef="CONSUMES" value="JSON" id="21"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="22"/>
+      <elementValue elementRef="STREAMING" value="false" id="23"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
@@ -181,6 +185,9 @@
       <column comment="path" key="false" length="-1" name="executionId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="uiRequest" name="uiRequest"/>
+    <metadata connector="FLOW" label="unmaskRequest" name="unmaskRequest">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-40" posY="-40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
@@ -273,7 +280,7 @@
       <column comment="" key="false" length="-1" name="requested_at" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="rutNormalized" expression="parsedRequest.rut == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: parsedRequest.rut.trim()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    .replace(&quot;.&quot;, &quot;&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    .replace(&quot; &quot;, &quot;&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    .toUpperCase() " type="id_String"/>
         <mapperTableEntries name="actionNormalized" expression="parsedRequest.action == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: parsedRequest.action.trim().toUpperCase() " type="id_String"/>
@@ -284,7 +291,7 @@
         <mapperTableEntries name="rutValid" expression="Var.rutNormalized != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.rutNormalized.matches(&quot;^[0-9]{7,8}-[0-9K]$&quot;) " type="id_Boolean"/>
         <mapperTableEntries name="actionValid" expression="&quot;MASK&quot;.equals(Var.actionNormalized) " type="id_Boolean"/>
         <mapperTableEntries name="requestedByValid" expression="Var.requestedByNormalized != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !Var.requestedByNormalized.isEmpty() " type="id_Boolean"/>
-        <mapperTableEntries name="sourceObjectValid" expression="context.allowed_source_object.equals(Var.sourceObjectNormalized) " type="id_Boolean"/>
+        <mapperTableEntries name="sourceObjectValid" expression="context.allowed_source_object_mask != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.sourceObjectNormalized != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; context.allowed_source_object_mask.equals(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    Var.sourceObjectNormalized&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;) " type="id_Boolean"/>
         <mapperTableEntries name="isValid" expression="Var.rutValid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.actionValid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.requestedByValid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.sourceObjectValid " type="id_Boolean"/>
         <mapperTableEntries name="validationMessage" expression="!Var.rutValid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? &quot;El RUT debe utilizar el formato 12345678-9 o 12345678-K&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: !Var.actionValid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? &quot;La accion permitida es MASK&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: !Var.requestedByValid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? &quot;requestedBy es obligatorio&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: !Var.sourceObjectValid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? &quot;sourceObject debe ser raw.customer&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: &quot;VALID&quot; " type="id_String"/>
       </varTables>
@@ -1417,6 +1424,748 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="-240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="body"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="masked_customer_rut" id="0"/>
+      <elementValue elementRef="QUERY" value="" id="1"/>
+      <elementValue elementRef="NODECHECK" value="false" id="2"/>
+      <elementValue elementRef="ISARRAY" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="request_id" id="4"/>
+      <elementValue elementRef="QUERY" value="" id="5"/>
+      <elementValue elementRef="NODECHECK" value="false" id="6"/>
+      <elementValue elementRef="ISARRAY" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="requested_by" id="8"/>
+      <elementValue elementRef="QUERY" value="" id="9"/>
+      <elementValue elementRef="NODECHECK" value="false" id="10"/>
+      <elementValue elementRef="ISARRAY" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="unmask_reason" id="12"/>
+      <elementValue elementRef="QUERY" value="" id="13"/>
+      <elementValue elementRef="NODECHECK" value="false" id="14"/>
+      <elementValue elementRef="ISARRAY" value="false" id="15"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="masked_customer_rut" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;$.masked_customer_rut&quot;" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="request_id" id="2"/>
+      <elementValue elementRef="QUERY" value="&quot;$.request_id&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="requested_by" id="4"/>
+      <elementValue elementRef="QUERY" value="&quot;$.requested_by&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="unmask_reason" id="6"/>
+      <elementValue elementRef="QUERY" value="&quot;$.unmask_reason&quot;" id="7"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tExtractJSONFields_ParseUnmaskRequest"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="unmaskRequest" name="tExtractJSONFields_2">
+      <column comment="" key="false" length="-1" name="masked_customer_rut" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="requested_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unmask_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="unmaskRequest" name="REJECT">
+      <column comment="" key="false" length="-1" name="masked_customer_rut" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="requested_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unmask_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2480" posY="-80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_15" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_15-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_ValidateUnmaskRequest   "/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="invalidUnmaskRequest" name="invalidUnmaskRequest">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="error_code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="http_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="validUnmaskRequest" name="validUnmaskRequest">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masked_customer_rut" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="requested_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unmask_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="task_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masking_policy_version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="environment_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="retention_minutes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source_object" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="maskedRut" expression="parsedUnmaskRequest.masked_customer_rut == null&#xD;&#xA;&#x9;&#x9;&#x9;    ? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;    : parsedUnmaskRequest.masked_customer_rut.trim() " type="id_String"/>
+        <mapperTableEntries name="requestId" expression="parsedUnmaskRequest.request_id == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;|| parsedUnmaskRequest.request_id.trim().isEmpty()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    ? &quot;UNMASK-&quot; + java.util.UUID.randomUUID().toString()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    : parsedUnmaskRequest.request_id.trim() " type="id_String"/>
+        <mapperTableEntries name="requestedBy" expression="parsedUnmaskRequest.requested_by == null&#xD;&#xA;&#x9;&#x9;&#x9;    ? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;    : parsedUnmaskRequest.requested_by.trim() " type="id_String"/>
+        <mapperTableEntries name="reason" expression="parsedUnmaskRequest.unmask_reason == null&#xD;&#xA;&#x9;&#x9;&#x9;    ? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;    : parsedUnmaskRequest.unmask_reason.trim() " type="id_String"/>
+        <mapperTableEntries name="validRut" expression="Var.maskedRut.matches(&quot;^[0-9]{8}-[0-9Kk]$&quot;) " type="id_Boolean"/>
+        <mapperTableEntries name="validRequestId" expression="Var.requestId.matches(&quot;^[A-Za-z0-9._:-]{8,150}$&quot;) " type="id_Boolean"/>
+        <mapperTableEntries name="validRequestedBy" expression="!Var.requestedBy.isEmpty() " type="id_Boolean"/>
+        <mapperTableEntries name="validReason" expression="Var.reason.length() >= 5 " type="id_Boolean"/>
+        <mapperTableEntries name="validTaskId" expression="context.talend_cloud_task_id_unmask != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !context.talend_cloud_task_id_unmask.trim().isEmpty() " type="id_Boolean"/>
+        <mapperTableEntries name="isValid" expression="Var.validRut&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.validRequestId&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.validRequestedBy&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.validReason&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.validTaskId " type="id_Boolean"/>
+        <mapperTableEntries name="errorCode" expression="!Var.validRut&#xD;&#xA;&#x9;&#x9;&#x9;    ? &quot;INVALID_MASKED_RUT&quot;&#xD;&#xA;&#x9;&#x9;&#x9;    : !Var.validRequestId&#xD;&#xA;&#x9;&#x9;&#x9;        ? &quot;INVALID_REQUEST_ID&quot;&#xD;&#xA;&#x9;&#x9;&#x9;        : !Var.validRequestedBy&#xD;&#xA;&#x9;&#x9;&#x9;            ? &quot;REQUESTED_BY_REQUIRED&quot;&#xD;&#xA;&#x9;&#x9;&#x9;            : !Var.validReason&#xD;&#xA;&#x9;&#x9;&#x9;                ? &quot;UNMASK_REASON_REQUIRED&quot;&#xD;&#xA;&#x9;&#x9;&#x9;                : !Var.validTaskId&#xD;&#xA;&#x9;&#x9;&#x9;                    ? &quot;UNMASK_TASK_NOT_CONFIGURED&quot;&#xD;&#xA;&#x9;&#x9;&#x9;                    : null " type="id_String"/>
+        <mapperTableEntries name="errorMessage" expression="!Var.validRut&#xD;&#xA;&#x9;&#x9;&#x9;    ? &quot;El RUT enmascarado tiene un formato inválido.&quot;&#xD;&#xA;&#x9;&#x9;&#x9;    : !Var.validRequestId&#xD;&#xA;&#x9;&#x9;&#x9;        ? &quot;El request_id tiene un formato inválido.&quot;&#xD;&#xA;&#x9;&#x9;&#x9;        : !Var.validRequestedBy&#xD;&#xA;&#x9;&#x9;&#x9;            ? &quot;El usuario solicitante es obligatorio.&quot;&#xD;&#xA;&#x9;&#x9;&#x9;            : !Var.validReason&#xD;&#xA;&#x9;&#x9;&#x9;                ? &quot;El motivo del desenmascaramiento es obligatorio.&quot;&#xD;&#xA;&#x9;&#x9;&#x9;                : !Var.validTaskId&#xD;&#xA;&#x9;&#x9;&#x9;                    ? &quot;La tarea de desenmascaramiento no está configurada.&quot;&#xD;&#xA;&#x9;&#x9;&#x9;                    : null " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="invalidUnmaskRequest" expressionFilter="!Var.isValid" activateExpressionFilter="true">
+        <mapperTableEntries name="action" expression="&quot;UNMASK&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" expression="Var.requestId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="error_code" expression="Var.errorCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" expression="Var.errorMessage" type="id_String" nullable="true"/>
+        <mapperTableEntries name="http_status" expression="400" type="id_Integer" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="validUnmaskRequest" expressionFilter="Var.isValid" activateExpressionFilter="true">
+        <mapperTableEntries name="action" expression="&quot;UNMASK&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" expression="Var.requestId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="masked_customer_rut" expression="Var.maskedRut" type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" expression="Var.requestedBy" type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" expression="Var.reason" type="id_String" nullable="true"/>
+        <mapperTableEntries name="task_id" expression="context.talend_cloud_task_id_unmask" type="id_String" nullable="true"/>
+        <mapperTableEntries name="masking_policy_version" expression="context.masking_policy_version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="environment_name" expression="context.environment_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="retention_minutes" expression="context.unmask_retention_minutes" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="source_object" expression="context.allowed_source_object_unmask" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="parsedUnmaskRequest" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="masked_customer_rut" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="3160" posY="-80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_25" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_25-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_BuildMalformedJsonResponse_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="responseMalformedUnmask">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="responseMalformedUnmask">
+        <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;accepted\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;action\&quot;:\&quot;UNMASK\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;REJECTED\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;MALFORMED_JSON\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;El cuerpo de la solicitud no contiene un JSON válido.\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="jsonRejectUnmask" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="masked_customer_rut" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" type="id_String" nullable="true"/>
+        <mapperTableEntries name="errorJSONField" type="id_String" nullable="true"/>
+        <mapperTableEntries name="errorCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="errorMessage" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3160" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_15" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="400"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json; charset=UTF-8&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="tRESTResponse_MalformedJson_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_15">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2200" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_5" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="tHTTPClient_GetCloudToken_Unmask"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.talend_cloud_base_url"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="Basic"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.basic.username" value="context.talend_service_account_id"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.authentication.basic.password" value="context.talend_service_account_secret"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.talend_cloud_token_path"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="true"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="Content-Type" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="application/json" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{&#xD;&#xA;  &quot;grant_type&quot;: &quot;client_credentials&quot;&#xD;&#xA;}"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="JSON"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value=""/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="BODY_ONLY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="true"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="true"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs">
+      <elementValue elementRef="configuration.dataset.keyValuePairs[].key" value="access_token" id="0"/>
+      <elementValue elementRef="configuration.dataset.keyValuePairs[].value" value="{.response.access_token}" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="context.http_connection_timeout_ms"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="context.http_receive_timeout_ms"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" label="validUnmaskRequest" name="tHTTPClient_5">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masked_customer_rut" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="requested_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unmask_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="task_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masking_policy_version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="environment_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="retention_minutes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source_object" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="access_token" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2200" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_17" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_17-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_CheckToken_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tokenOkUnmask" name="tokenOkUnmask">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masked_customer_rut" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="requested_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unmask_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="task_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masking_policy_version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="environment_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="retention_minutes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source_object" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="access_token" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="tokenFailedUnmask" name="tokenFailedUnmask">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="error_code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="http_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="tokenOk" expression="tokenResultUnmask.access_token != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !tokenResultUnmask.access_token.trim().isEmpty() " type="id_Boolean"/>
+        <mapperTableEntries name="errorCode" expression="&quot;TOKEN_REQUEST_FAILED&quot; " type="id_String"/>
+        <mapperTableEntries name="errorMessage" expression="&quot;No fue posible obtener el token de Talend Cloud.&quot; " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="tokenOkUnmask" expressionFilter="Var.tokenOk" activateExpressionFilter="true">
+        <mapperTableEntries name="action" expression="tokenResultUnmask.action " type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" expression="tokenResultUnmask.request_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="masked_customer_rut" expression="tokenResultUnmask.masked_customer_rut " type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" expression="tokenResultUnmask.requested_by " type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" expression="tokenResultUnmask.unmask_reason " type="id_String" nullable="true"/>
+        <mapperTableEntries name="task_id" expression="tokenResultUnmask.task_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="masking_policy_version" expression="tokenResultUnmask.masking_policy_version " type="id_String" nullable="true"/>
+        <mapperTableEntries name="environment_name" expression="tokenResultUnmask.environment_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="retention_minutes" expression="tokenResultUnmask.retention_minutes " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="source_object" expression="tokenResultUnmask.source_object " type="id_String" nullable="true"/>
+        <mapperTableEntries name="access_token" expression="tokenResultUnmask.access_token " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="tokenFailedUnmask" expressionFilter="!Var.tokenOk" activateExpressionFilter="true">
+        <mapperTableEntries name="action" expression="tokenResultUnmask.action " type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" expression="tokenResultUnmask.request_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="error_code" expression="Var.errorCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" expression="Var.errorMessage " type="id_String" nullable="true"/>
+        <mapperTableEntries name="http_status" expression="502" type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="tokenResultUnmask" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="action" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="masked_customer_rut" type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" type="id_String" nullable="true"/>
+        <mapperTableEntries name="task_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="masking_policy_version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="environment_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="retention_minutes" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="source_object" type="id_String" nullable="true"/>
+        <mapperTableEntries name="access_token" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="1920" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_6" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="tHTTPClient_StartExecution_Unmask"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.talend_cloud_base_url"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.talend_cloud_execution_path"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="true"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="Authorization" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="Bearer {.input.access_token}" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="Content-Type" id="3"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="application/json" id="4"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="5"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="Accept" id="6"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="application/json" id="7"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{&#xD;&#xA;  &quot;executable&quot;: &quot;{.input.task_id}&quot;,&#xD;&#xA;  &quot;logLevel&quot;: &quot;WARN&quot;,&#xD;&#xA;  &quot;parameters&quot;: {&#xD;&#xA;    &quot;masked_customer_rut&quot;: &quot;{.input.masked_customer_rut}&quot;,&#xD;&#xA;    &quot;request_id&quot;: &quot;{.input.request_id}&quot;,&#xD;&#xA;    &quot;masking_policy_version&quot;: &quot;{.input.masking_policy_version}&quot;,&#xD;&#xA;    &quot;environment_name&quot;: &quot;{.input.environment_name}&quot;,&#xD;&#xA;    &quot;requested_by&quot;: &quot;{.input.requested_by}&quot;,&#xD;&#xA;    &quot;unmask_reason&quot;: &quot;{.input.unmask_reason}&quot;,&#xD;&#xA;    &quot;retention_minutes&quot;: &quot;{.input.retention_minutes}&quot;&#xD;&#xA;  }&#xD;&#xA;}"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="JSON"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value=""/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="BODY_ONLY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="true"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="true"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs">
+      <elementValue elementRef="configuration.dataset.keyValuePairs[].key" value="execution_id" id="0"/>
+      <elementValue elementRef="configuration.dataset.keyValuePairs[].value" value="{response.executionId}" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="context.http_connection_timeout_ms"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="context.http_receive_timeout_ms"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" label="tokenOkUnmask" name="tHTTPClient_6">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masked_customer_rut" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="requested_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unmask_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="task_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masking_policy_version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="environment_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="retention_minutes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source_object" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="access_token" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="execution_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2480" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_24" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_24-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_BuildTokenError_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="responseTokenErrorUnmask">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="responseTokenErrorUnmask">
+        <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;accepted\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;action\&quot;:\&quot;&quot; + tokenFailedUnmask.action + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;requestId\&quot;:\&quot;&quot; + tokenFailedUnmask.request_id + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;ERROR\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;&quot; + tokenFailedUnmask.error_code + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;&quot; + tokenFailedUnmask.message + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;cloudStatus\&quot;:&quot; + tokenFailedUnmask.http_status&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="tokenFailedUnmask" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="action" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="error_code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" type="id_String" nullable="true"/>
+        <mapperTableEntries name="http_status" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2480" posY="600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_14" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="502"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json; charset=UTF-8&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="tRESTResponse_TokenError_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_14">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1920" posY="600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_20" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_20-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_CheckExecution_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="executionStartedUnmask" name="executionStartedUnmask">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="masked_customer_rut" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="requested_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unmask_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="task_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="execution_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="executionFailedUnmask" name="executionFailedUnmask">
+      <column comment="" key="false" length="-1" name="action" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="request_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="error_code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="http_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="executionStarted" expression="executionResultUnmask.execution_id != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !executionResultUnmask.execution_id.trim().isEmpty() " type="id_Boolean"/>
+        <mapperTableEntries name="errorCode" expression="&quot;EXECUTION_START_FAILED&quot; " type="id_String"/>
+        <mapperTableEntries name="errorMessage" expression="&quot;Talend Cloud no devolvió un identificador de ejecución para la tarea de desenmascaramiento.&quot; " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="executionStartedUnmask" expressionFilter="Var.executionStarted" activateExpressionFilter="true">
+        <mapperTableEntries name="action" expression="executionResultUnmask.action " type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" expression="executionResultUnmask.request_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="masked_customer_rut" expression="executionResultUnmask.masked_customer_rut " type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" expression="executionResultUnmask.requested_by " type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" expression="executionResultUnmask.unmask_reason " type="id_String" nullable="true"/>
+        <mapperTableEntries name="task_id" expression="executionResultUnmask.task_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="execution_id" expression="executionResultUnmask.execution_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="&quot;ACCEPTED&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="executionFailedUnmask" expressionFilter="!Var.executionStarted" activateExpressionFilter="true">
+        <mapperTableEntries name="action" expression="executionResultUnmask.action " type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" expression="executionResultUnmask.request_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="error_code" expression="Var.errorCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" expression="Var.errorMessage " type="id_String" nullable="true"/>
+        <mapperTableEntries name="http_status" expression="502" type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="executionResultUnmask" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="action" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="masked_customer_rut" type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" type="id_String" nullable="true"/>
+        <mapperTableEntries name="task_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="masking_policy_version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="environment_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="retention_minutes" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="source_object" type="id_String" nullable="true"/>
+        <mapperTableEntries name="access_token" type="id_String" nullable="true"/>
+        <mapperTableEntries name="execution_id" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_21" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_21-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_BuildAcceptedResponse_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="responseAcceptedUnmask">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="responseAcceptedUnmask">
+        <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;accepted\&quot;:true,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;action\&quot;:\&quot;&quot; + executionStartedUnmask.action + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;requestId\&quot;:\&quot;&quot; + executionStartedUnmask.request_id + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;executionId\&quot;:\&quot;&quot; + executionStartedUnmask.execution_id + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;taskId\&quot;:\&quot;&quot; + executionStartedUnmask.task_id + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;&quot; + executionStartedUnmask.status + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;La solicitud de desenmascaramiento fue aceptada por Talend Cloud.\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="executionStartedUnmask" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="action" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="masked_customer_rut" type="id_String" nullable="true"/>
+        <mapperTableEntries name="requested_by" type="id_String" nullable="true"/>
+        <mapperTableEntries name="unmask_reason" type="id_String" nullable="true"/>
+        <mapperTableEntries name="task_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="execution_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="1040">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_11" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="202"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json; charset=UTF-8&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_11">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2760" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_16" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_16-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_BuildBadRequestResponse_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="responseBadRequestUnmask">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="responseBadRequestUnmask">
+        <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;accepted\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;action\&quot;:\&quot;&quot; + invalidUnmaskRequest.action + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;requestId\&quot;:\&quot;&quot; + invalidUnmaskRequest.request_id + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;REJECTED\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;&quot; + invalidUnmaskRequest.error_code + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;&quot; + invalidUnmaskRequest.message + &quot;\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="invalidUnmaskRequest" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="action" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="error_code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" type="id_String" nullable="true"/>
+        <mapperTableEntries name="http_status" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2760" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_10" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="400"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json; charset=UTF-8&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="tRESTResponse_BadRequest_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_10">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2200" posY="840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_22" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zu8xYIrXEfGr0fsk5oZxHg-tMap_22-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_BuildExecutionError_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="responseCloudErrorUnmask">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="responseCloudErrorUnmask">
+        <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;accepted\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;action\&quot;:\&quot;&quot; + executionFailedUnmask.action + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;requestId\&quot;:\&quot;&quot; + executionFailedUnmask.request_id + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;ERROR\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;&quot; + executionFailedUnmask.error_code + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;&quot; + executionFailedUnmask.message + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;cloudStatus\&quot;:&quot; + executionFailedUnmask.http_status&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="executionFailedUnmask" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="action" type="id_String" nullable="true"/>
+        <mapperTableEntries name="request_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="error_code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" type="id_String" nullable="true"/>
+        <mapperTableEntries name="http_status" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2200" posY="1040">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_13" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="502"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json; charset=UTF-8&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="tRESTResponse_CloudError_Unmask"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_13">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="remediationRequest" lineStyle="0" metaname="remediationRequest" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTRequest_1" target="tExtractJSONFields_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
@@ -1450,6 +2199,15 @@
   <connection connectorName="FLOW" label="uiRequest" lineStyle="0" metaname="uiRequest" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tRESTRequest_1" target="tMap_13">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="uiRequest" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="unmaskRequest" lineStyle="0" metaname="unmaskRequest" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tRESTRequest_1" target="tExtractJSONFields_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="unmaskRequest" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="parsedRequest" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tExtractJSONFields_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1591,6 +2349,90 @@
   <connection connectorName="FLOW" label="uiPage" lineStyle="0" metaname="uiPage" offsetLabelX="0" offsetLabelY="0" source="tMap_13" target="tRESTResponse_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="uiPage" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="parsedUnmaskRequest" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tExtractJSONFields_2" target="tMap_15">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="unmask_reason" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="requested_by" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="request_id" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="masked_customer_rut" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="parsedUnmaskRequest" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="jsonRejectUnmask" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tExtractJSONFields_2" target="tMap_25">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jsonRejectUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="invalidUnmaskRequest" lineStyle="0" metaname="invalidUnmaskRequest" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_15" target="tMap_16">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="invalidUnmaskRequest" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="validUnmaskRequest" lineStyle="0" metaname="validUnmaskRequest" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_15" target="tHTTPClient_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="validUnmaskRequest" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="responseMalformedUnmask" lineStyle="0" metaname="responseMalformedUnmask" offsetLabelX="0" offsetLabelY="0" source="tMap_25" target="tRESTResponse_15">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="responseMalformedUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="tokenResultUnmask" lineStyle="0" metaname="tHTTPClient_5" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_5" target="tMap_17">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="access_token" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tokenResultUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="tokenOkUnmask" lineStyle="0" metaname="tokenOkUnmask" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_17" target="tHTTPClient_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tokenOkUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="tokenFailedUnmask" lineStyle="0" metaname="tokenFailedUnmask" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_17" target="tMap_24">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tokenFailedUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="executionResultUnmask" lineStyle="0" metaname="tHTTPClient_6" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_6" target="tMap_20">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="execution_id" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="executionResultUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="responseTokenErrorUnmask" lineStyle="0" metaname="responseTokenErrorUnmask" offsetLabelX="0" offsetLabelY="0" source="tMap_24" target="tRESTResponse_14">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="responseTokenErrorUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="executionStartedUnmask" lineStyle="0" metaname="executionStartedUnmask" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_20" target="tMap_21">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="executionStartedUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="executionFailedUnmask" lineStyle="0" metaname="executionFailedUnmask" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_20" target="tMap_22">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="executionFailedUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="responseAcceptedUnmask" lineStyle="0" metaname="responseAcceptedUnmask" offsetLabelX="0" offsetLabelY="0" source="tMap_21" target="tRESTResponse_11">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="responseAcceptedUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="responseBadRequestUnmask" lineStyle="0" metaname="responseBadRequestUnmask" offsetLabelX="0" offsetLabelY="0" source="tMap_16" target="tRESTResponse_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="responseBadRequestUnmask" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="responseCloudErrorUnmask" lineStyle="0" metaname="responseCloudErrorUnmask" offsetLabelX="0" offsetLabelY="0" source="tMap_22" target="tRESTResponse_13">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="responseCloudErrorUnmask" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
