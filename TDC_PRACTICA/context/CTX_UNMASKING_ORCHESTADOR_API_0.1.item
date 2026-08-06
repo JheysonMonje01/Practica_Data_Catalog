@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_HWF5UI64EfGlA6dFt1mhuQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_HWF5UY64EfGlA6dFt1mhuQ" comment="" name="api_endpoint" prompt="api_endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/customer-unmasking"/>
+  <contextParameter xmi:id="_HWF5Uo64EfGlA6dFt1mhuQ" comment="" name="talend_cloud_base_url" prompt="talend_cloud_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://api.us.cloud.talend.com"/>
+  <contextParameter xmi:id="_HWF5VI64EfGlA6dFt1mhuQ" comment="" name="unmask_task_id" prompt="unmask_task_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="6a740c735df7dde5f986435e"/>
+  <contextParameter xmi:id="_HWF5VY64EfGlA6dFt1mhuQ" comment="" name="token_path" prompt="token_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/security/oauth/token"/>
+  <contextParameter xmi:id="_HWF5Vo64EfGlA6dFt1mhuQ" comment="" name="execution_path" prompt="execution_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/processing/executions"/>
+  <contextParameter xmi:id="_HWF5V464EfGlA6dFt1mhuQ" comment="" name="execution_status_path" prompt="execution_status_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/processing/executions/{executionId}"/>
+  <contextParameter xmi:id="_HWF5WI64EfGlA6dFt1mhuQ" comment="" name="service_account_id" prompt="service_account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ZiFiZYqh6rf1tWBzkZZ2TCME6nHAPM_pO6Gosju3g8U"/>
+  <contextParameter xmi:id="_HWF5WY64EfGlA6dFt1mhuQ" comment="" name="service_account_secret" prompt="service_account_secret?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:HcfKiVOm93RY91Mv1JslmOet2/KphXfrLMsd5jejFow2okAljcu9+7FQMCwv7icptJA2aq1KmEgIp0wO19WIjZnBXPKE7geQd0Uol9lR2A409P+lYyhIwUNbLrg="/>
+  <contextParameter xmi:id="_HWF5Wo64EfGlA6dFt1mhuQ" comment="" name="poll_interval_seconds" prompt="poll_interval_seconds?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3"/>
+  <contextParameter xmi:id="_HWF5W464EfGlA6dFt1mhuQ" comment="" name="poll_max_attempts" prompt="poll_max_attempts?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="40"/>
+</talendfile:ContextType>
