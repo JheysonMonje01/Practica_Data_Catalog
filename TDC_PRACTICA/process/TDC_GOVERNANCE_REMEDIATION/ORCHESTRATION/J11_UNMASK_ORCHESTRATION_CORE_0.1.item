@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="request_body" prompt="request_body?" promptNeeded="false" repositoryContextId="_aMuX8JG0EfG7QeDW8EwUiA" type="id_String" value="{&quot;masked_customer_rut&quot;:&quot;73974273-3&quot;,&quot;request_id&quot;:&quot;UNMASK-TEST-001&quot;,&quot;requested_by&quot;:&quot;JHEYSON_TEST&quot;,&quot;unmask_reason&quot;:&quot;&quot;}" internalId="_6TjbYJG9EfG7QeDW8EwUiA"/>
+    <contextParameter comment="" name="request_body" prompt="request_body?" promptNeeded="false" repositoryContextId="_aMuX8JG0EfG7QeDW8EwUiA" type="id_String" value="" internalId="_6TjbYJG9EfG7QeDW8EwUiA"/>
     <contextParameter comment="" name="talend_cloud_base_url" prompt="talend_cloud_base_url?" promptNeeded="false" repositoryContextId="_aMuX8JG0EfG7QeDW8EwUiA" type="id_String" value="https://api.us.cloud.talend.com" internalId="_6TjbYZG9EfG7QeDW8EwUiA"/>
     <contextParameter comment="" name="talend_cloud_task_id_unmask" prompt="talend_cloud_task_id_unmask?" promptNeeded="false" repositoryContextId="_aMuX8JG0EfG7QeDW8EwUiA" type="id_String" value="6a72af703e2dd1dac3600483" internalId="_6TjbYpG9EfG7QeDW8EwUiA"/>
     <contextParameter comment="" name="talend_service_account_id" prompt="talend_service_account_id?" promptNeeded="false" repositoryContextId="_aMuX8JG0EfG7QeDW8EwUiA" type="id_String" value="4YVCWuazeeaswgm4fGlWe_OBmtHZLUO0IMdsTqcOq6c" internalId="_6TjbY5G9EfG7QeDW8EwUiA"/>
@@ -529,7 +529,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="true"/>
     <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs">
       <elementValue elementRef="configuration.dataset.keyValuePairs[].key" value="execution_id" id="0"/>
-      <elementValue elementRef="configuration.dataset.keyValuePairs[].value" value="{response.executionId}" id="1"/>
+      <elementValue elementRef="configuration.dataset.keyValuePairs[].value" value="{.response.executionId}" id="1"/>
     </elementParameter>
     <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
     <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
