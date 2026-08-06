@@ -280,7 +280,7 @@
       <column comment="" key="false" length="-1" name="requested_at" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="rutNormalized" expression="parsedRequest.rut == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: parsedRequest.rut.trim()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    .replace(&quot;.&quot;, &quot;&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    .replace(&quot; &quot;, &quot;&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    .toUpperCase() " type="id_String"/>
         <mapperTableEntries name="actionNormalized" expression="parsedRequest.action == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: parsedRequest.action.trim().toUpperCase() " type="id_String"/>
@@ -1518,7 +1518,7 @@
       <column comment="" key="false" length="-1" name="source_object" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="maskedRut" expression="parsedUnmaskRequest.masked_customer_rut == null&#xD;&#xA;&#x9;&#x9;&#x9;    ? &quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;    : parsedUnmaskRequest.masked_customer_rut.trim() " type="id_String"/>
         <mapperTableEntries name="requestId" expression="parsedUnmaskRequest.request_id == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;|| parsedUnmaskRequest.request_id.trim().isEmpty()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    ? &quot;UNMASK-&quot; + java.util.UUID.randomUUID().toString()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    : parsedUnmaskRequest.request_id.trim() " type="id_String"/>
@@ -1579,7 +1579,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="responseMalformedUnmask">
         <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;accepted\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;action\&quot;:\&quot;UNMASK\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;REJECTED\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;MALFORMED_JSON\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;El cuerpo de la solicitud no contiene un JSON válido.\&quot;&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
@@ -1747,7 +1747,7 @@
       <column comment="" key="false" length="-1" name="http_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="tokenOk" expression="tokenResultUnmask.access_token != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; !tokenResultUnmask.access_token.trim().isEmpty() " type="id_Boolean"/>
         <mapperTableEntries name="errorCode" expression="&quot;TOKEN_REQUEST_FAILED&quot; " type="id_String"/>
@@ -2135,7 +2135,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="responseCloudErrorUnmask">
         <mapperTableEntries name="body" expression="&quot;{&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;accepted\&quot;:false,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;action\&quot;:\&quot;&quot; + executionFailedUnmask.action + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;requestId\&quot;:\&quot;&quot; + executionFailedUnmask.request_id + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;status\&quot;:\&quot;ERROR\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;errorCode\&quot;:\&quot;&quot; + executionFailedUnmask.error_code + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;message\&quot;:\&quot;&quot; + executionFailedUnmask.message + &quot;\&quot;,&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;\&quot;cloudStatus\&quot;:&quot; + executionFailedUnmask.http_status&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;}&quot; " type="id_String" nullable="true"/>
@@ -2199,15 +2199,6 @@
   <connection connectorName="FLOW" label="uiRequest" lineStyle="0" metaname="uiRequest" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tRESTRequest_1" target="tMap_13">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="uiRequest" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="unmaskRequest" lineStyle="0" metaname="unmaskRequest" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tRESTRequest_1" target="tExtractJSONFields_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="unmaskRequest" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="parsedRequest" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tExtractJSONFields_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2436,6 +2427,11 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>

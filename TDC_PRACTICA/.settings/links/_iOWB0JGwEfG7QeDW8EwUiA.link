@@ -1,0 +1,47 @@
+{
+  "itemId" : "_iOWB0JGwEfG7QeDW8EwUiA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_aMuX8JG0EfG7QeDW8EwUiA",
+    "parameterList" : [ {
+      "id" : "_aM-2oZG0EfG7QeDW8EwUiA",
+      "name" : "request_body"
+    }, {
+      "id" : "_aM-2opG0EfG7QeDW8EwUiA",
+      "name" : "talend_cloud_base_url"
+    }, {
+      "id" : "_aM-2o5G0EfG7QeDW8EwUiA",
+      "name" : "talend_cloud_task_id_unmask"
+    }, {
+      "id" : "_aM-2pJG0EfG7QeDW8EwUiA",
+      "name" : "talend_service_account_id"
+    }, {
+      "id" : "_aM-2pZG0EfG7QeDW8EwUiA",
+      "name" : "talend_service_account_secret"
+    }, {
+      "id" : "_aM-2ppG0EfG7QeDW8EwUiA",
+      "name" : "masking_policy_version"
+    }, {
+      "id" : "_aM-2p5G0EfG7QeDW8EwUiA",
+      "name" : "environment_name"
+    }, {
+      "id" : "_aM-2qJG0EfG7QeDW8EwUiA",
+      "name" : "talend_cloud_token_path"
+    }, {
+      "id" : "_aM-2qZG0EfG7QeDW8EwUiA",
+      "name" : "talend_cloud_execution_path"
+    }, {
+      "id" : "_aM-2qpG0EfG7QeDW8EwUiA",
+      "name" : "http_connection_timeout_ms"
+    }, {
+      "id" : "_aM-2q5G0EfG7QeDW8EwUiA",
+      "name" : "http_receive_timeout_ms"
+    }, {
+      "id" : "_aM-2rJG0EfG7QeDW8EwUiA",
+      "name" : "allowed_source_object_unmask"
+    }, {
+      "id" : "_aM-2rZG0EfG7QeDW8EwUiA",
+      "name" : "unmask_retention_minutes"
+    } ]
+  } ]
+}
