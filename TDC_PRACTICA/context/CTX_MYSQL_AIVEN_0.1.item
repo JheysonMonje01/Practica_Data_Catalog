@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_25OTsInUEfGsx4rYDGpP7Q" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_25O6wInUEfGsx4rYDGpP7Q" comment="" name="MYSQL_Server" prompt="MYSQL_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-31036ed7-anthonychaconfu29-5614.l.aivencloud.com"/>
+  <contextParameter xmi:id="_25O6wYnUEfGsx4rYDGpP7Q" comment="" name="MYSQL_Login" prompt="MYSQL_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="avnadmin"/>
+  <contextParameter xmi:id="_25O6wonUEfGsx4rYDGpP7Q" comment="" name="MYSQL_Port" prompt="MYSQL_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="26515"/>
+  <contextParameter xmi:id="_25O6w4nUEfGsx4rYDGpP7Q" comment="" name="MYSQL_Database" prompt="MYSQL_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="crm"/>
+  <contextParameter xmi:id="_25O6xInUEfGsx4rYDGpP7Q" comment="" name="MYSQL_Password" prompt="MYSQL_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:r95Bozw3AcJd9k10p23Ioer4exCenyUcwG9evceq7Wc/QpRr5fFGgUzAwe5Bu+zvGt1feg=="/>
+  <contextParameter xmi:id="_25O6xYnUEfGsx4rYDGpP7Q" comment="" name="MYSQL_AdditionalParams" prompt="MYSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;enabledTLSProtocols=TLSv1.2"/>
+  <contextParameter xmi:id="_f-oDYInYEfGsx4rYDGpP7Q" comment="" name="FF1_MASKING_KEY" prompt="FF1_MASKING_KEY?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:HerVoAHcMt/85qiyhhFv8uFxlD0cRk4ZB0OdFIbo2BI="/>
+  <contextParameter xmi:id="_SEAuUJIKEfG_Q6iWOnqb3A" comment="" name="ip_origen" prompt="ip_origen?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

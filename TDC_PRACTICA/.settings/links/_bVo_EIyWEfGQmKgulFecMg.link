@@ -1,0 +1,53 @@
+{
+  "itemId" : "_bVo_EIyWEfGQmKgulFecMg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_SRmLsIyWEfGQmKgulFecMg",
+    "parameterList" : [ {
+      "id" : "_SSBpgYyWEfGQmKgulFecMg",
+      "name" : "api_endpoint_del"
+    }, {
+      "id" : "_SSBpgoyWEfGQmKgulFecMg",
+      "name" : "talend_cloud_base_url"
+    }, {
+      "id" : "_SSBpg4yWEfGQmKgulFecMg",
+      "name" : "talend_cloud_token_path"
+    }, {
+      "id" : "_SSBphIyWEfGQmKgulFecMg",
+      "name" : "talend_cloud_execution_path"
+    }, {
+      "id" : "_SSBphYyWEfGQmKgulFecMg",
+      "name" : "talend_cloud_execution_status_path"
+    }, {
+      "id" : "_SSBphoyWEfGQmKgulFecMg",
+      "name" : "talend_cloud_task_id_delete"
+    }, {
+      "id" : "_SSBph4yWEfGQmKgulFecMg",
+      "name" : "talend_service_account_id"
+    }, {
+      "id" : "_SSBpiIyWEfGQmKgulFecMg",
+      "name" : "talend_service_account_secret"
+    }, {
+      "id" : "_SSBpiYyWEfGQmKgulFecMg",
+      "name" : "poll_interval_seconds"
+    }, {
+      "id" : "_SSBpioyWEfGQmKgulFecMg",
+      "name" : "poll_max_attempts"
+    }, {
+      "id" : "_SSBpi4yWEfGQmKgulFecMg",
+      "name" : "tdc_base_url"
+    }, {
+      "id" : "_SSBpjIyWEfGQmKgulFecMg",
+      "name" : "tdc_update_request_path_del"
+    }, {
+      "id" : "_SSBpjYyWEfGQmKgulFecMg",
+      "name" : "http_connection_timeout_ms"
+    }, {
+      "id" : "_SSBpjoyWEfGQmKgulFecMg",
+      "name" : "http_receive_timeout_ms"
+    }, {
+      "id" : "_LBtxsIyjEfGQmKgulFecMg",
+      "name" : "rut_solicitud"
+    } ]
+  } ]
+}
