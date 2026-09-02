@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_3O8OcKFhEfG9qaHBy9LKgg" name="cPostgres_demo" id="_gqEIwKFgEfG9qaHBy9LKgg" label="cPostgres_demo" dataPackage="_3k4pQKFhEfG9qaHBy9LKgg" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://127.0.0.1:5433/demo_linaje?" dbVersionString="V9_X" Port="5433" Username="tdc_reader" Password="enc:system.encryption.key.v1:jP7SP6NkXo4VqEFCDC3VBXa+a4OXODhG3fJPxA4OIrQ/fLSMhzy5" ServerName="127.0.0.1" DatasourceName="" FileFieldName="" SID="demo_linaje" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="ventas" supportNLS="false">
+    <taggedValue xmi:id="_3O8OcaFhEfG9qaHBy9LKgg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_3RNfUKFhEfG9qaHBy9LKgg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_3RS-4KFhEfG9qaHBy9LKgg" tag="Status" value=""/>
+    <taggedValue xmi:id="_3RS-4aFhEfG9qaHBy9LKgg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_3RS-4qFhEfG9qaHBy9LKgg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_3RS-46FhEfG9qaHBy9LKgg" tag="Description" value=""/>
+    <taggedValue xmi:id="_3RS-5KFhEfG9qaHBy9LKgg" tag="Author" value=""/>
+    <taggedValue xmi:id="_3RS-5aFhEfG9qaHBy9LKgg" tag="otherParameter"/>
+    <taggedValue xmi:id="_3Zht0KFhEfG9qaHBy9LKgg" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_3Zht0aFhEfG9qaHBy9LKgg" tag="DB ProductVersion" value="15.18 (Debian 15.18-0+deb12u1)"/>
+    <taggedValue xmi:id="_3Zht0qFhEfG9qaHBy9LKgg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_3O8OcqFhEfG9qaHBy9LKgg" key="CONN_PARA_KEY_USERNAME" value="tdc_reader"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_3k4pQKFhEfG9qaHBy9LKgg" name="demo_linaje" dataManager="_3O8OcKFhEfG9qaHBy9LKgg">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_3k5QUKFhEfG9qaHBy9LKgg" name="ventas"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

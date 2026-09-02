@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010">
+  <softwaredeployment:TdSoftwareSystem xmi:id="_3mUMoKFhEfG9qaHBy9LKgg" name="PostgreSQL" subtype="PostgreSQL" version="15.18 (Debian 15.18-0+deb12u1)"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_yjkwwKVtEfGThb1GTPfcpw" name="MySQL" subtype="MySQL" version="8.4.8"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_61xMQKV0EfGThb1GTPfcpw" name="PostgreSQL" subtype="PostgreSQL" version="18.6"/>
+</xmi:XMI>

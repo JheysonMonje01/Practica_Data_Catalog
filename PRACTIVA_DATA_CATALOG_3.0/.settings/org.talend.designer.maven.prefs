@@ -1,0 +1,4 @@
+PROJECT_GROUPID=org.example.practiva_data_catalog_3.0
+PROJECT_VERSION=8.0.1
+SKIP_LOOP_DEPENDENCY_CHECK=true
+eclipse.preferences.version=1

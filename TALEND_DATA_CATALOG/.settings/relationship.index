@@ -1,0 +1,112 @@
+[ {
+  "baseItem" : {
+    "id" : "_WEPScKWmEfG4hNOGqSsOQQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_U3vE4KVrEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_U3vE4KVrEfGThb1GTPfcpw - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - customer_rejects",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_hm28sKWIEfGavdbuIHfXVQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_U3vE4KVrEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_U3vE4KVrEfGThb1GTPfcpw - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - customer_clean",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - customer_rejects",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_mPPFgKYWEfGxzb9AEb6qCg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_U3vE4KVrEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_U3vE4KVrEfGThb1GTPfcpw - products",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - products_rejects",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_vqYskKWuEfG4hNOGqSsOQQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - customer_clean",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - customer_rejects",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_yK9JQKYZEfGxzb9AEb6qCg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - products_clean",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_z-2b8KVtEfGThb1GTPfcpw - products_rejects",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
